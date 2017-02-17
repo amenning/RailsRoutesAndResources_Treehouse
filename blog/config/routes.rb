@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :posts
+  # The followinig 7 lines could be replaced with "resources :pages"
   get '/pages', to: 'pages#index'
   post '/pages', to: 'pages#create'
   get '/pages/new', to: 'pages#new', as: 'new_page'
